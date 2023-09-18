@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecss">
+    <title>Calculadora</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td  id="res">444<td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><button class="operacao" onclick="mostrarTela(' + ')">+</button></td>
+                <td><button class="operacao" onclick="mostrarTela(' - ')">-</button></td>
+                <td><button class="operacao" onclick="mostrarTela(' * ')">*</button></td>
+                <td><button class="operacao" onclick="mostrarTela(' / ')">/</button></td>
+            </tr>
+            <tr>
+                <td><button class="numero" onclick="mostrarTela('7')">7</button></td>
+                <td><button class="numero" onclick="mostrarTela('8')">8</button></td>
+                <td><button class="numero" onclick="mostrarTela('9')">9</button></td>
+                <td><button id="AC">AC</button></td>
+            </tr>
+            <tr>
+                <td><button class="numero" onclick="mostrarTela('4')">4</button></td>
+                <td><button class="numero" onclick="mostrarTela('5')">5</button></td>
+                <td><button class="numero" onclick="mostrarTela('6')">6</button></td>
+                <td><button onclick="mostrarTela('DEL')">DEL</button></td>
+            </tr>
+            <tr>
+                <td><button class="numero" onclick="mostrarTela('1')">1</button></td>
+                <td><button class="numero" onclick="mostrarTela('2')">2</button></td>
+                <td><button class="numero" onclick="mostrarTela('3')">3</button></td>
+                <td rowspan="2"><button  id="result">=</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button style="width: 160px;" class="numero"  onclick="mostrarTela('0')">0</button></td>
+                <td><button onclick="mostrarTela('.')">.</button></td>
+            </tr>
+        </tbody>
+        <script src="script.js"></script>
+    </table>
+</body>
+</html>

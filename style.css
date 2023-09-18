@@ -1,0 +1,78 @@
+@font-face {
+  font-family: monitor;
+  src: url(fontes/DS-DIGIT.TTF) format(TrueType);
+}
+
+:root {
+  --color1: #424548;
+  --color2: #70757a;
+  --color_result: #aecbfa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height:100vh ;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.475)5%, rgba(0, 0, 0, 0.842), black );
+}
+
+table {
+  background-color: gray;
+  padding: 3px;
+  position: absolute;
+  border: 2px solid;
+  border-radius: 10px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.404);
+  visibility: visible;
+}
+
+button {
+  background-color: var(--color2);
+  color: white;
+  font-family: arial;
+  font-size: 1.5em;
+  font-weight: 600;
+  height: 60px;
+  width: 80px;
+  margin: 3px;
+  border-radius: 15px;
+  font-weight: 400;
+}
+
+button:active {
+  transform: translate(-2px, -2px);
+}
+
+thead > tr:nth-child(2) td {
+  font-family: "monitor";
+  text-align: right;
+  font-size: 2.3em;
+  background-color: lightgrey;
+  border: 4px solid;
+  height: 65px;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+#title {
+  text-align: center;
+  font-size: 2.3em;
+  font-family: arial;
+  font-weight: 600;
+  text-shadow:1px 1px 1px rgba(0, 0, 0, 0.404) ;
+}
+
+#result {
+  background-color: var(--color_result);
+  color: black;
+}
+
+.numero {
+  background-color: var(--color1);
+}
