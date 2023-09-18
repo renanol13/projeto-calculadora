@@ -1,16 +1,13 @@
-let res = document.querySelector("#res");
-let cond = "";
 
 let mostrarTela = (digit) => {
-  cond += digit;
-  if (cond.length <= 13) {
-    res.innerHTML = cond;
+  let res = document.querySelector("#res");
+  if (res.innerHTML.length <= 13) {
+    res.innerHTML += digit;
   }
 };
 
 AC.addEventListener("click", () => {
   res.innerHTML = "";
-  cond = "";
 });
 
 result.addEventListener("click", () => {
@@ -25,3 +22,4 @@ result.addEventListener("click", () => {
 const delet = () => {
   res.innerHTML = res.innerHTML.slice(0, -1);
 };
+
