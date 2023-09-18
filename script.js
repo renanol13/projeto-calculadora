@@ -1,7 +1,7 @@
 
 let mostrarTela = (digit) => {
   let res = document.querySelector("#res");
-  if (res.innerHTML.length <= 13) {
+  if (res.innerHTML.length <= 12) {
     res.innerHTML += digit;
   }
 };
@@ -16,6 +16,7 @@ result.addEventListener("click", () => {
     res.innerHTML = msg;
   } catch (error) {
     alert("[ERRO!] Verifique Sua entrada!");
+    //res.innerHTML = ''
   }
 });
 
